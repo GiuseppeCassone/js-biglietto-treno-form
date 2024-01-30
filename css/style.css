@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(184, 19, 19);
+}
+
+.container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+/* SEZIONE DATI INSERITI DALL'UTENTE */
+
+h1{
+    color: white;
+    margin: 20px 0px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.col{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.input-card{
+    width: calc(100% / 3 - 20px * 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-card label{
+    color: red;
+    margin-bottom: 10px;
+}
+
+.input-card input{
+    padding: 8px 10px;
+    text-align: center;
+}
+
+button{
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+button:hover{
+    color: red;
+    border-color: red;
+    transform: scale(1.5);
+    transition: all 0.3s;
+}
+
+
+/* SEZIONE BIGLIETTO */
+
+h2{
+    width: 100%;
+}
+
+.col-left{
+    width: 30%;
+    padding: 20px 10px;
+    background-color: lightgrey;
+    border: 1px solid grey;
+    text-align: left;
+}
+
+.col-left div{
+    font-weight: bold;
+}
+
+.col-right{
+    width: 70%;
+    display: flex;
+    padding: 20px 10px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.col-right .details{
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+

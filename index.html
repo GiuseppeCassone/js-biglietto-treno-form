@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
     <title>Biglietto treno form</title>
 </head>
 <body>
@@ -12,30 +14,71 @@
 
 
 
+    
+    <div class="container">
+        
         <h1>INSERISCI I DATI PER IL CALCOLO DEL COSTO DEL TUO BIGLIETTO</h1>
+        
+        <div class="row">
+            
+            <div class="col mb-30">
 
-        <div class="container">
+                <div class="input-card">
+                    <label for="nameInput">NOME COGNOME</label>
+                    <input type="text" id="nameInput">
+                </div>
+        
+                <div class="input-card">
+                    <label for="kmInput">KM CHE VUOI PERCORRERE</label>
+                    <input type="number" id="kmInput">
+                </div>
+        
+                <div class="input-card">
+                    <label for="ageInput">I TUOI ANNI</label>
+                    <input type="number" id="ageInput">
+                </div>
 
-            <div>
-                <label for="nameInput">NOME COGNOME</label>
-                <input type="text" id="nameInput">
             </div>
-    
-            <div>
-                <label for="kmInput">KM CHE VUOI PERCORRERE</label>
-                <input type="number" id="kmInput">
+
+            <div class="col">
+
+                <button>CALCOLA</button>   
+
             </div>
-    
-            <div>
-                <label for="ageInput">I TUOI ANNI</label>
-                <input type="number" id="ageInput">
+               
+        </div> 
+
+        <h1>IL TUO BIGLIETTO</h1>
+
+        <div class="row">
+
+            <h2>DETTAGLI PASSEGGERO</h2>
+
+            <div class="col-left">
+                <h2>NOME PASSEGGERO</h2>
+                <div id="passenger"></div>
             </div>
 
-            <button>CALCOLA</button>
+            <div class="col-right">
+                <div class="details">
+                    <h3 class="mb-30">Sconto</h3>
+                    <div id="yourDiscount"></div>
+                </div>
+                <div class="details">
+                    <h3 class="mb-30">Numero Posto</h3>
+                    <div>25</div>
+                </div>
+                <div class="details">
+                    <h3 class="mb-30">Costo Biglietto</h3>
+                    <div id="finalPrice"></div>                  
+                </div>
 
-            <div id="finalPrice"></div>
+            </div>
 
         </div>
+            
+
+     </div>
 
 
 

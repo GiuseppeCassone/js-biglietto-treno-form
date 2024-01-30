@@ -4,6 +4,10 @@ buttonElement.addEventListener(`click`,
     
     function() {
 
+      const userName = document.getElementById(`nameInput`).value;
+
+      document.getElementById(`passenger`).innerHTML = userName;
+
       const distance = document.getElementById(`kmInput`).value;
     
       let basePrice = distance * 0.21;
@@ -16,24 +20,24 @@ buttonElement.addEventListener(`click`,
           
           if (age < 18) {
           
-            //   document.getElementById(`yourDiscount`).innerHTML = `Hai i requisiti per uno sconto del 20%`
+            document.getElementById(`yourDiscount`).innerHTML = `Biglietto Under 17`
           
               basePrice = (basePrice * 0.20)
           }
       
           if (age > 17 && age < 65) {
       
-            //   document.getElementById(`yourDiscount`).innerHTML = `Non hai i requisiti per uno sconto`
+          document.getElementById(`yourDiscount`).innerHTML = `Standard`
           }
           
           if (age > 64) {
           
-            //   document.getElementById(`yourDiscount`).innerHTML = `Hai i requisiti per uno sconto del 40%`
+            document.getElementById(`yourDiscount`).innerHTML = `Biglietto Over 65`
           
               basePrice = (basePrice * 0.40)
           }
           
-          document.getElementById(`finalPrice`).innerHTML = `Il prezzo del tuo biglietto è di ${basePrice.toFixed(2)}`;
+          document.getElementById(`finalPrice`).innerHTML = `Il costo è di € ${basePrice.toFixed(2)}`;
       
       } else {
       
