@@ -22,7 +22,7 @@ buttonElement.addEventListener(`click`,
           
             document.getElementById(`yourDiscount`).innerHTML = `Biglietto Under 17`
           
-              basePrice = (basePrice * 0.20)
+              basePrice = basePrice - (basePrice * 0.20)
           }
       
           if (age > 17 && age < 65) {
@@ -34,7 +34,7 @@ buttonElement.addEventListener(`click`,
           
             document.getElementById(`yourDiscount`).innerHTML = `Biglietto Over 65`
           
-              basePrice = (basePrice * 0.40)
+              basePrice = basePrice - (basePrice * 0.40)
           }
           
           document.getElementById(`finalPrice`).innerHTML = `Il costo è di € ${basePrice.toFixed(2)}`;
